@@ -1,0 +1,129 @@
+.bg-img{
+    min-height: 190vh;
+   width: 100%;
+   background: url('../../../src/assets/images/background.jpg') no-repeat center center fixed;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+}
+.container h2
+{
+	font-family:Verdana;
+	font-weight:bold;
+	text-align:center;
+	color:white;
+	margin-top: 25px;
+}
+.container p
+{
+	font-weight:bold;
+	color:#00ccff;
+	text-align: center;
+	font-style: oblique;
+}
+.rounded-circle{
+	box-shadow:2px 4px 8px #47dfed;
+}
+.rounded-circle:hover{
+	filter: grayscale(100%);
+	box-shadow:2px 4px 8px white;
+}
+.icon p{
+	font-size: 20px;
+	font-weight: bold;
+	color:white;
+	font-family: Baskerville;
+	font-style: unset;
+	border-radius: 10px;
+}
+.icon p:hover{
+    box-shadow: 2px 4px 8px white;
+    background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
+}
+.icon i{
+	color:white;
+	padding-top: 10px;
+}
+.fa-envelope{
+	text-shadow: 3px 3px 16px white;
+}
+.fa-phone{
+	text-shadow: 3px 3px 16px white;
+}
+.contactForm{
+	background-color: white;
+	padding: 40px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	border: 1px solid;
+  	box-shadow: 5px 10px 8px #47dfed;
+}
+.contactForm:hover{
+	box-shadow: 10px 20px 20px #47dfed;
+}
+.contactForm h2{
+	font-size:30px;
+	color:#333;
+	font-weight:500;
+	font-style: italic;
+	text-align: center;
+}
+.contactForm .inputBox
+{
+	position:relative;
+	width:100%;
+	margin-top:10px;
+}
+.contactForm .inputBox input 
+{
+	width:100%;
+	padding:5px 0;
+	font-size:16px;
+	margin:10px 0;
+	border:none;
+	border-bottom:2px solid #333;
+	outline:none;
+	resize:none;
+}
+.contactForm .inputBox span
+{
+	position:absolute;
+	left:0;
+	padding:5px 0;
+	font-size:16px;
+	margin:10px 0;
+	pointer-events:none;
+	transition:0.5s;
+	color:#666;
+	
+}
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span
+{
+	color:#e91e63;
+	font-size:15px;
+	transform:translateY(-25px);
+}
+.contactForm .btn
+{
+	width:100px;
+	background:#00bcd4;
+	color:#fff;
+	border:none;
+	cursor:pointer;
+	padding:10px;
+	font-size:18px;
+	text-align: center;
+    margin-left: 40%;
+    font-family: Georgia;
+	font-weight: bold;
+	border-radius: 10px;
+}
+.contactForm .form-group .alert{
+    color:red;
+    font-size: 15px;
+    padding:5px;
+}

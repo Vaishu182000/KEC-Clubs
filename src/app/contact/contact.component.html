@@ -1,0 +1,87 @@
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+<div class="bg-img">
+    <br>
+    <div class="container">
+        <div class="header">
+            <h2 style="font-size: 3vw;">Contact Us</h2>
+            <p style="font-size: 2vw;">The process of testing an integrated system to verify that it meets specified requirements.</p><br><br>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row" style="text-align: center;">
+            <div class="col-sm-4 mx-auto">
+                <img [src]="Vaish" class="rounded-circle" alt="Cinque Terre" width="200" height="200">
+                <div style="margin-left: 55px; padding-top:40px">
+                    <div class="icon" style="margin-left:10px; display:flex"><i class="fas fa-envelope fa-2x"></i>
+                        <p style="margin-left: 10px;" class="px-2 py-2"><i>svaish2000@gmail.com</i></p>	
+                    </div>
+                    <div class="icon" style="margin-left:10px; display:flex"><i class="fa fa-phone fa-2x" aria-hidden="true"></i>
+                        <p style="margin-left: 10px;" class="px-2 py-2">+91 95009 77257</p>	
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <img [src]="Mathi" class="rounded-circle" alt="Cinque Terre" width="200" height="200">
+                <div style="margin-left: 55px; padding-top:40px">
+                    <div class="icon" style="margin-left:10px; display:flex"><i class="fas fa-envelope fa-2x"></i>
+                        <p style="margin-left: 10px;" class="px-2 py-2"><i>shanmathi200@gmail.com</i></p>	
+                    </div>
+                    <div class="icon" style="margin-left:10px; display:flex"><i class="fa fa-phone fa-2x" aria-hidden="true"></i>
+                        <p style="margin-left: 10px;" class="px-2 py-2">+91 98659 87177</p>	
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <img [src]="Kavin" class="rounded-circle" alt="Cinque Terre" width="200" height="200">
+                <div style="margin-left: 55px; padding-top:40px">
+                    <div class="icon" style="margin-left:10px; display:flex"><i class="fas fa-envelope fa-2x"></i>
+                        <p style="margin-left: 10px;" class="px-2 py-2"><i>kavinbharathikc.19cse@kongu.edu</i></p>	
+                    </div>
+                    <div class="icon" style="margin-left:10px; display:flex"><i class="fa fa-phone fa-2x" aria-hidden="true"></i>
+                        <p style="margin-left: 10px;" class="px-2 py-2">+91 93845 92406</p>	
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <div class="contactForm">
+                    <form #loginform="ngForm">
+                        <h2>Give FeedBack</h2>
+                        <br>
+                        <div class="form-group inputBox">
+                          <input required ngModel name="firstName" #firstName="ngModel" minlength="3" type="text">
+                          <span>Full Name</span>
+                          <div *ngIf="firstName.touched && !firstName.valid" class="alert">
+                              <div *ngIf="firstName.errors.required" class="alert">Name is required</div>
+                              <div *ngIf="firstName.errors.minlength" class="alert">Name length must be greater than 3</div>
+                          </div>
+                        </div>
+                        <div class="form-group inputBox">
+                          <input required ngModel name="email" email="true" #email="ngModel" type="email">
+                          <span>Email</span>
+                          <div *ngIf="email.touched && !email.valid" class="alert">
+                              <div *ngIf="email.errors.required" class="alert">Email is required</div>
+                              <div *ngIf="email.errors && email.dirty" class="alert">Provide valid email</div>
+                          </div>
+                        </div>
+                        <div class="form-group inputBox">
+                            <input required ngModel name="feedBack" minlength="10" #feedBack="ngModel" type="text">
+                            <span>Type Your Feedback ...</span>
+                            <div *ngIf="feedBack.touched && !feedBack.valid" class="alert">
+                                <div *ngIf="feedBack.errors.required" class="alert">Please provide your feedback</div>
+                                <div *ngIf="feedBack.errors.minlength" class="alert">FeedBack length must be greater than 10</div>
+                            </div>
+                        </div>
+                        <div class="form-group bt">
+                            <button class="btn btn-primary" >Submit</button>
+                        </div>
+                      </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

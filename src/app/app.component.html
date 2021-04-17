@@ -1,0 +1,94 @@
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <a class="navbar-brand" href="#">KEC Clubs</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" (click)="isCollapsed=!isCollapsed" [attr.aria-expanded]="!isCollapsed" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent" [ngbCollapse]="isCollapsed">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="/home">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/about">About Us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/club">Club</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/contact">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<div class="header">
+  <img [src]="header">
+</div>  
+
+<router-outlet></router-outlet>
+
+<footer class="page-footer bg-dark">
+  <div class="bgsuccess">
+    <div class="bg-success">
+      <div class="container">
+        <div class="row py-4 d-flex align-items-center">				
+          <div class="col-md-12 text-center">
+            <a href="#" ><i class="fab fa-facebook-f fa-2x text-white mr-4 social"></i></a>       
+            <a href="#" ><i class="fab fa-twitter fa-2x text-white mr-4 social"></i></a> 
+            <a href="#" ><i class="fab fa-google-plus-g fa-2x text-white mr-4 social"></i></a> 
+            <a href="#" ><i class="fab fa-linkedin-in fa-2x text-white mr-4 social"></i></a> 
+            <a href="#" ><i class="fab fa-instagram fa-2x text-white social"></i></a> 						
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row he">
+      <div class="col-md-3">
+        <h5 class="text-uppercase">Developers</h5>
+        <hr class="line">
+        <ul class="list-unstyled">
+          <li class="my-2">Vaishnavi S</li>
+          <li class="my-2">Shanmathi C</li>
+          <li class="my-2">KavinBharathi A</li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h5 class="text-uppercase">Useful links</h5>
+					<hr class="line">					
+					<ul class="list-unstyled">
+						<li class="my-2"><i class="fas fa-home fa-lg mr-3 list"></i><a routerLink="/home">HOME</a></li>
+						<li class="my-2"><i class="fas fa-address-card fa-lg mr-3 list"></i><a routerLink="/about">ABOUT US</a></li>					
+						<li class="my-2"><i class="fas fa-graduation-cap fa-lg mr-3 list"></i><a routerLink="/club">CLUBS</a></li>
+						<li class="my-2"><i class="fas fa-phone fa-lg mr-3 list"></i><a routerLink="/contact">CONTACT</a></li>
+					</ul>
+      </div>
+      <div class="col-md-3">
+        <h5 class="text-uppercase">Contact</h5>
+					<hr class="line">					
+					<ul class="list-unstyled">
+						<li class="my-2 con"><i class="fas fa-home fa-lg mr-3 list"></i>Kongu Engineering College</li>
+						<li class="my-2 con"><i class="far fa-envelope fa-lg mr-3 list"></i>svaish2000@gmail.com</li>
+						<li class="my-2 con"><i class="fas fa-phone fa-lg mr-3 list"></i>+9500977257</li>
+						<li class="my-2 con"><i class="fas fa-print fa-lg mr-3 list"></i>+002233467799</li>
+					</ul>
+      </div>
+      <div class="col-md-3">
+        <h5 class="text-uppercase">Products</h5>
+					<hr class="line">					
+					<ul class="list-unstyled">
+						<li class="my-2 list">HTML 5</li>
+						<li class="my-2 list">CSS</li>
+						<li class="my-2 list">BOOTSTRAP</li>
+						<li class="my-2 list">ANGULAR</li>
+					</ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright text-center">
+    <h5>Designed And Maintained By Triples<i class="fas fa-heart hert fa-sm"></i></h5>
+  </div>
+</footer>

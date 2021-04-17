@@ -1,0 +1,123 @@
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+<div class="bg-img">
+    <div class="container">
+        <div class="row">
+            <h2 class="glow mx-auto" style="font-size:4vw;">Cultural Club</h2>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4 header mx-auto bg-success p-lg-3 pt-sm-5 m-4" style="text-align: center; border-radius:5px">
+                <h1 style="font-size:3vw;">Faculty Coordinator</h1>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row mx-auto"  style="text-align: center;">
+                <div class="col-md-4 faculty">
+                    <div class="card">
+                        <img [src]="fac1" class="rounded mx-auto">
+                        <div class="">
+                            <h5 class="name mt-2">Dr. R. Manjula Devi</h5>
+                            <div style="display: flex;" class="fac-icons-degree pt-2 pl-4">
+                                <i class="fas fa-graduation-cap pr-2 pt-1"></i>
+                                <p>PhD</p>
+                            </div>
+                            <h5 class="pb-2">Computer Science and Engineering</h5>
+                            <div style="display: flex;" class="fac-icons">
+                                <i class="fas fa-envelope fa-md pr-2 pt-1"></i>
+                                <p>manjuladevi@kongu.ac.in</p>
+                            </div>
+                            <div style="display: flex;" class="fac-icons-phone">
+                                <i class="fas fa-phone-square pr-2 pt-1"></i>
+                                <p>+91 73737 27281</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 faculty">
+                    <div class="card">
+                        <img [src]="fac2" class="rounded mx-auto">
+                        <div class="">
+                            <h5 class="name mt-2">K.V.SATHEESH KUMAR</h5>
+                            <div style="display: flex;" class="fac-icons-degree pt-2 pl-2">
+                                <i class="fas fa-graduation-cap pr-2 pt-1"></i>
+                                <p>BE/ME/MBA</p>
+                            </div>
+                            <h5 class="mb-0">Mechanical</h5>
+                            <h5 class="mt-0 pb-2">Engineering</h5>
+                            <div style="display: flex;" class="fac-icons pl-4">
+                                <i class="fas fa-envelope fa-md pr-2 pt-1"></i>
+                                <p>kvs@kongu.ac.in</p>
+                            </div>
+                            <div style="display: flex;" class="fac-icons-phone">
+                                <i class="fas fa-phone-square pr-2 pt-1"></i>
+                                <p>+91 95783 67576</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 faculty">
+                    <div class="card">
+                        <img [src]="fac3" class="rounded mx-auto">
+                        <div class="">
+                            <h5 class="name mt-2">Sajitha A.S</h5>
+                            <div style="display: flex;" class="fac-icons-degree pt-2 pl-4">
+                                <i class="fas fa-graduation-cap pr-2 pt-1"></i>
+                                <p>MTech</p>
+                            </div>
+                            <h5 class="mb-0">Chemical</h5>
+                            <h5 class="mt-0 pb-2">Engineering</h5>
+                            <div style="display: flex;" class="fac-icons">
+                                <i class="fas fa-envelope fa-md pr-2 pt-1"></i>
+                                <p>sajitha.chem@kongu.ac.in</p>
+                            </div>
+                            <div style="display: flex;" class="fac-icons-phone">
+                                <i class="fas fa-phone-square pr-2 pt-1"></i>
+                                <p>+91 73065 45868</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="instaicon mt-4 mb-4 mx-auto" style="display: flex;">
+                <i class="fab fa-instagram fa-2x px-2 py-2"></i>
+                <h3 class="glow ml-3 mt-2">cultural_club_of_kec</h3>
+            </div>
+        </div>
+    </div>    
+    <div class="container">
+        <div class="row" style="text-align: center;">
+            <div class="col-sm-12 buton">
+                <a (click)="open(content)">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    Register
+                </a>
+            </div>
+        </div>
+    </div>
+    <ng-template #content let-c="close" let-d="dismiss">
+        <div class="modal-bg">
+            <div class="modal-header">
+            <h4 class="modal-title" id="modal-basic-title">Welcome You to Cultural Club of KEC</h4>
+            <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+                <a href="https://forms.gle/BBxLRRZPEu4znfEJ8" target="blank">Register Here</a>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-success mx-auto" (click)="c('Save click')">Done<i class="fas fa-thumbs-up fa-1x pl-2 pt-2 mb-2"></i></button>
+            </div>
+        </div>
+      </ng-template>   
+</div>

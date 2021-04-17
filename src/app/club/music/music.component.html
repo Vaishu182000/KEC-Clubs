@@ -1,0 +1,100 @@
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+<div class="bg-img">
+    <div class="container">
+        <div class="row">
+            <h2 class="glow mx-auto" style="font-size:4vw;">Music Club</h2>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4 header mx-auto bg-success p-lg-3 pt-sm-5 m-4" style="text-align: center; border-radius:5px">
+                <h1 style="font-size:3vw;">Faculty Coordinator</h1>
+            </div>
+        </div>
+    </div>
+    <div class="container mx-auto">
+        <div class="row"  style="text-align: center;">
+                <div class="col-md-6 faculty">
+                    <div class="card">
+                        <img [src]="fac1" class="rounded mx-auto pt-3">
+                        <div class="">
+                            <h3 class="name mt-2">N.Anitha</h3>
+                            <div style="display: flex;" class="fac-icons-degree pt-2">
+                                <i class="fas fa-graduation-cap pr-2 pt-1"></i>
+                                <p>BE(CSE).,MTech(IT)</p>
+                            </div>
+                            <h5 class="pb-2">Information Technology</h5>
+                            <div style="display: flex;" class="fac-icons pl-3">
+                                <i class="fas fa-envelope fa-md pr-2 pt-1"></i>
+                                <p>anitha@kongu.ac.in</p>
+                            </div>
+                            <div style="display: flex;" class="fac-icons-phone">
+                                <i class="fas fa-phone-square pr-2 pt-1"></i>
+                                <p>+91 95978 57657</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 faculty">
+                    <div class="card">
+                        <img [src]="fac2" class="rounded mx-auto pt-3">
+                        <div class="">
+                            <h3 class="name mt-2">Ramalingam.M</h3>
+                            <div style="display: flex;" class="fac-icons-degree pt-2 pl-3">
+                                <i class="fas fa-graduation-cap pr-2 pt-1"></i>
+                                <p>BE., M.E.,</p>
+                            </div>
+                            <h5 class="pb-2">Information Technology</h5>
+                            <div style="display: flex;" class="fac-icons">
+                                <i class="fas fa-envelope fa-md pr-2 pt-1"></i>
+                                <p>mramalingam@kongu.ac.in</p>
+                            </div>
+                            <div style="display: flex;" class="fac-icons-phone">
+                                <i class="fas fa-phone-square pr-2 pt-1"></i>
+                                <p>+91 99946 68841</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="instaicon mt-4 mb-4 mx-auto" style="display: flex;">
+                <i class="fab fa-instagram fa-2x px-2 py-2"></i>
+                <h3 class="glow ml-3 mt-2">thegenderequalityclub</h3>
+            </div>
+        </div>
+    </div>    
+    <div class="container">
+        <div class="row" style="text-align: center;">
+            <div class="col-sm-12 buton">
+                <a (click)="open(content)">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    Register
+                </a>
+            </div>
+        </div>
+    </div>
+    <ng-template #content let-c="close" let-d="dismiss">
+        <div class="modal-bg">
+            <div class="modal-header">
+            <h4 class="modal-title" id="modal-basic-title">Welcome You to Music of KEC</h4>
+            <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+                <a href="https://forms.gle/BBxLRRZPEu4znfEJ8" target="blank">Register Here</a>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-success mx-auto" (click)="c('Save click')">Done<i class="fas fa-thumbs-up fa-1x pl-2 pt-2 mb-2"></i></button>
+            </div>
+        </div>
+      </ng-template>
+</div>
